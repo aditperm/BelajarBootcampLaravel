@@ -1,1 +1,62 @@
+  - Github
+buat akun github
+-------------------------------
+step upload ke github = git clone *repo nya -> git add . -> git commit -m"message" -> git push
+-------------------------------
+- tools yg di instal
+git scm
+github
+whimsical
+dbeaver
+php8
+composer
+node js
+vscode
+--------------------------------
+- install extension vscode
+auto close tag
+auto complete tag
+auto rename tag
+bracket pair colorizer 2
+cdnjs
+code coverage highlighter
+code runner
+color info
+colorize
+coverage gutters
+dotenv
+duplicate action
+eslint
+git history
+github copilot
+gitlens
+highlight matching tag
+html css support
+html snippets
+laravel blade snippets
+laravel blade spacer
+laravel model snippets
+laravel snippets
+live server
+markdown all in one
+monokai pro
+material icon theme
+mysql
+npm
+nx console
+path intellisense
+php awesome snippets
+php dockblocker
+php namespace resolver
+postcss language support
+prettier
+pylance
+python
+regex previewer
+standardjs
+sublime text keymap
+svg viewer
+tabnine
+tailwind css intellisense
+
 
