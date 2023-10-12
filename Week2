@@ -1,7 +1,10 @@
   - Github
 buat akun github
 -------------------------------
-step upload ke github = git clone *repo nya -> git add . -> git commit -m"message" -> git push
+step upload ke github = git clone *repo nya (buat clone/ambil repo nya di github) 
+-> git add . -> git status -> git commit -m"message" -> git push
+
+git pull = untuk mengambil perubahan terakhir dari orang lain
 -------------------------------
 - tools yg di instal
 git scm
