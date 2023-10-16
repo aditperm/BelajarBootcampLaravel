@@ -1,0 +1,5 @@
+npm install //perintah untuk mendownload node modules segala package / module yg digunakan akan jalan
+
+npm run watch:css //perintah untuk melakukan perubahan segala apapun akan tergenerate langsung sama tailwind
+
+permission dan roles 
