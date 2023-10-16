@@ -3,3 +3,8 @@ npm install //perintah untuk mendownload node modules segala package / module yg
 npm run watch:css //perintah untuk melakukan perubahan segala apapun akan tergenerate langsung sama tailwind
 
 permission dan roles 
+
+
+composer create-project laravel/laravel:^8.0 example-app //untuk install laravel via cmposer
+
+ambil token di developer setting->token
