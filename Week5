@@ -1,3 +1,43 @@
 //perintah membuat table migrations
 
-php artisan make:migration create_flights_table
+php artisan make:migration create_type_user_table
+$table->string('name');
+table->softDeletes();
+        
+php artisan make:migration create_detail_user_table
+$table->integer('user_id');
+$table->integer('type_user_id');
+$table->string('contact')->nullable();
+$table->longText('address')->nullable();
+$table->longText('photo')->nullable();
+$table->string('gender', [1,2])->nullable();
+$table->softDeletes();
+
+php artisan make:migration create_role_table
+$table->string('title');
+$table->softDeletes();
+
+php artisan make:migration create_permission_table
+$table->string('title');
+$table->softDeletes();
+
+php artisan make:migration create_role_user_table
+$table->id();
+$table->integer('role_id');
+$table->integer('user_id');
+$table->timestamps();
+$table->softDeletes();
+
+php artisan make:migration create_permission_role_table
+$table->id();
+$table->integer('permission_id');
+$table->integer('role_id');
+$table->timestamps();
+$table->softDeletes();
+
+
+//setelah buat table maka lakukan
+php artisan migrate
+
+//membuat foreign key
+php artisan make:migration add_foreign_keys_to_detail_user_table
