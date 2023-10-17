@@ -1,0 +1,3 @@
+//perintah membuat table migrations
+
+php artisan make:migration create_flights_table
