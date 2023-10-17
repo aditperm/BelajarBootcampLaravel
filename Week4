@@ -5,6 +5,34 @@ npm run watch:css //perintah untuk melakukan perubahan segala apapun akan tergen
 permission dan roles 
 
 
-composer create-project laravel/laravel:^8.0 example-app //untuk install laravel via cmposer
+composer create-project laravel/laravel:^8.0 example-app //untuk install laravel via composer
 
 ambil token di developer setting->token
+
+php artisan serve //perintah untuk menjalankan app
+
+//perintah untuk push ke github
+git add .
+git commit -m"Message nya apa"
+git push
+
+composer update //untuk update ketika ambil repo orang lain
+
+composer require laravel/jetstream //perintah install jetstream
+
+php artisan jetstream:install livewire //perintah install livewire
+
+npm install && npm run dev //perintah untuk install packages
+
+membuat database di xampp namanya database nya bootcamp-fwd20230db
+setting di .env
+
+php artisan migrate //perintah untuk membuat database
+
+//solusi agar login dan register gambar tidak besar
+-matikan ini di app.blade.php, guest.blade.php
+ @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+ganti jadi ini
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+<script src="{{ asset('js/app.js') }}" defer></script>
