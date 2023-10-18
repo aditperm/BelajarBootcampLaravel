@@ -35,9 +35,13 @@ $table->integer('role_id');
 $table->timestamps();
 $table->softDeletes();
 
+//foreign yg ditambahkan di function up dan down
+//sehabis membuat foreignkey di table asalnya diubah juga dari integer ke foreignid
 
 //setelah buat table maka lakukan
 php artisan migrate
+atau
+php artisan migrate:refresh
 
 //membuat foreign key
 php artisan make:migration add_foreign_keys_to_detail_user_table
