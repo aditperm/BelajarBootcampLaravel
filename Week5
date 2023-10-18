@@ -45,3 +45,5 @@ php artisan migrate:refresh
 
 //membuat foreign key
 php artisan make:migration add_foreign_keys_to_detail_user_table
+
+//bikin table dahulu baru bikin foreign nya
