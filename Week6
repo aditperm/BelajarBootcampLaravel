@@ -32,3 +32,13 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 One to Many = HashMany + BelongsTo
 One to One = HashOne + BelongsTo
 Many to Many = HasMany + BelongsToMany
+
+//one to many
+     public function appointment(){ //nama function adalah tabel yg ingin dituju
+        return $this->hasMany('app\Models\Operational\Appointment','consultation_id'); //parameter 1 path yg ingin dituju, parameter 2 field yg ingin dituju
+     }
+
+public function consultation(){ //nama function adalah tabel yg ingin dituju
+        //3 parameter (path model, field foreign key, field primary key from table hasMany/hasOne)
+        return $this->belongsTo('app\Models\MasterData\Consultation','consultation_id', 'id'); 
+     }
