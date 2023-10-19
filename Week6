@@ -1,1 +1,34 @@
-/
+//membuat model
+php artisan make:model ManagementAccess/Flight
+//lalu tambahkan ini
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+ use SoftDeletes;
+    //declare table
+    public $table = 'detail_user'; //menginisiasi bahwa model detailuser table nya adalah detail user
+
+    //this field type date
+    protected $date = [
+        'created_at',
+        'updated_at',
+        'deleted_at',
+        //meprotec agar record ini tidak muncul
+    ];
+    //declare fillable
+    protected $fillable = [
+        'user_id',
+        'type_user_id',
+        'contact',
+        'address',
+        'photo',
+        'gender',
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
+
+
+//Eloquent ORM
+One to Many = HashMany + BelongsTo
+One to One = HashOne + BelongsTo
+Many to Many = HasMany + BelongsToMany
