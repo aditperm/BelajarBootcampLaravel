@@ -42,3 +42,4 @@ public function consultation(){ //nama function adalah tabel yg ingin dituju
         //3 parameter (path model, field foreign key, field primary key from table hasMany/hasOne)
         return $this->belongsTo('app\Models\MasterData\Consultation','consultation_id', 'id'); 
      }
+a
