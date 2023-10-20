@@ -1,0 +1,35 @@
+//seeder berfungsi kita menyiapkan data master atau data dummy
+
+//seeder
+php artisan make:seeder SpecialistSeeder
+php artisan make:seeder ConfigPaymentSeeder
+php artisan make:seeder ConsultationSeeder
+
+//isian seeder
+public function run()
+    {
+        //create data here
+        $config_payment = [
+            [
+                'fee' => '150000',
+                'vat' => '20', //vat is percentage
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+        ];
+
+        //this array config_payment will be insert to table 'config_payment'
+        ConfigPayment::insert($config_payment);
+    }
+
+//menggabungkan seeder yg telah dibuat
+public function run()
+    {
+        // \App\Models\User::factory(10)->create();
+        $this->call([
+            ConfigPaymentSeeder::class,
+            ConsultationSeeder::class,
+            SpecialistSeeder::class,
+            TypeUserSeeder::class,
+        ]);
+    }
