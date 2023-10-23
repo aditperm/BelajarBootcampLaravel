@@ -5,6 +5,9 @@ php artisan make:seeder SpecialistSeeder
 php artisan make:seeder ConfigPaymentSeeder
 php artisan make:seeder ConsultationSeeder
 
+//menjalankan
+php artisan migrate:refresh --seed
+
 //isian seeder
 public function run()
     {
