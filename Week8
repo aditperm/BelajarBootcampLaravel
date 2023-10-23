@@ -1,0 +1,44 @@
+Flow Penghapusan Foto
+- Get request new photo ( .png ) . rename ( encrypt )
+- Check foto lama ( ada atau tidak )
+- Ada ( get path & name file )
+- New photo masuk ke database
+- hapus foto lama
+
+Nama file before upload ( mas-ravon.png )
+Nama file after upload ( dsakjdsbakjsdnakjsd.png )
+
+Import Data
+-  Laravel Excel ( https://laravel-excel.com/ )
+
+Seeder Data
+- Fungsi nya untuk membuat sebuah data static ataupun sebuah data yang 
+  harus ada disaat database pertama kali di install / clone kedalam server.
+
+- Permission sifatnya sama seperti Type User
+kedua table tersebut, itu berpengaruh pada middleware yang akan dibangun
+
+Key Permission
+- dashboard_access
+- user_access
+- user_create
+- user_edit
+- user_delete
+
+Permission Role
+- Super Admin
+- dashboard_access
+
+User Role 
+- Super Admin
+- User = id 1
+
+Middleware kita itu tidak di sisi routing
+- melainkan di sisi request
+- dan di sisi view ( per component )
+- @can()
+- 403
+
+Routing = Group Route
+- Middleware : Fortify & Sanctum
+- 404
