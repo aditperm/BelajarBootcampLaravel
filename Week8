@@ -42,3 +42,12 @@ Middleware kita itu tidak di sisi routing
 Routing = Group Route
 - Middleware : Fortify & Sanctum
 - 404
+
+//membuat form request
+php artisan make:request StorePostRequest
+store = fungsinya
+post = nama modelnya
+request = flag wajib dikasih penamaaan nya
+
+//hanya ada di request update
+use Illuminate\Validation\Rule;
